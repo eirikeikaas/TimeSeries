@@ -10,10 +10,14 @@ import SwiftUI
 public typealias ChartDouble = (date: Date, value: Double)
 
 public struct DataSet {
-  static var empty = DataSet(data: [])
+  public static var empty = DataSet(data: [])
   public static var preview = DataSet(data: previewData)
   
   public var data: [ChartDouble]
+  
+  public init(data: [ChartDouble]) {
+    self.data = data
+  }
 }
 
 fileprivate var previewData: [ChartDouble] = [

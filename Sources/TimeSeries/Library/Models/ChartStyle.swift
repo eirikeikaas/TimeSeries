@@ -32,4 +32,6 @@ public class ChartStyle {
 
 public class NoAxesChartStyle: ChartStyle {
   override var showAxes: Bool { false }
+  override var xAxisStyle: AxisStyle { .none }
+  override var yAxisStyle: AxisStyle { .none }
 }
